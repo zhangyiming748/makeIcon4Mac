@@ -3,6 +3,12 @@ if [ -d "tmp.iconset" ]; then
   rm -rf "tmp.iconset"
   mkdir "tmp.iconset"
 fi
+if [ ! -d "Done" ]; then
+  mkdir "Done"
+fi
+if [ -f "Icon.icns" ]; then
+  mv "Icon.icns" "Done"
+fi
 if [ ! -d "tmp.iconset" ]; then
   mkdir "tmp.iconset"
 fi
